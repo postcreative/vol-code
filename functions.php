@@ -33,11 +33,11 @@
 		add_filter('wp_mail_from_name', 'new_mail_from_name');
 		 
 		function new_mail_from($old) {
-			 return 'info@engage-online.com';
+			 return 'tariq@senscot.net';
 		}
 		
 		function new_mail_from_name($old) {
-			 return 'Engage Demo';
+			 return 'Social Enterprise Code of Practice';
 		}    
     
 
@@ -53,22 +53,22 @@
 
 	//below fixed spans with 10px padding left and right
 	
-   add_image_size( 'small-thumb', 200, 132, true );
+/*   add_image_size( 'small-thumb', 200, 132, true );
 	add_image_size( 'medium-thumb', 280, 180, true );
 	add_image_size( 'small-main', 600, 340, true );
 	add_image_size( 'medium-main', 680, 420, true );
 	add_image_size( 'full-main', 940, 420, true );
-	add_image_size( 'half-main', 440, 276, true ); 	
+	add_image_size( 'half-main', 440, 276, true ); 	*/
 
 
-/* 	Fixed span with no padding
+ 
 
 	add_image_size( 'small-thumb', 220, 132, true );
 	add_image_size( 'medium-thumb', 300, 180, true );
 	add_image_size( 'small-main', 620, 340, true );
 	add_image_size( 'medium-main', 700, 420, true );
 	add_image_size( 'full-main', 940, 420, true );
-	add_image_size( 'half-main', 460, 276, true );	*/
+	add_image_size( 'half-main', 460, 276, true );	
 
 
 
@@ -83,7 +83,7 @@
 // http://codex.wordpress.org/Function_Reference/register_sidebar
 
 function engage_register_sidebars() {
-  $sidebars = array( 'Page', 'Search');
+  $sidebars = array( 'Page');
 
   foreach($sidebars as $sidebar) {
     register_sidebar(

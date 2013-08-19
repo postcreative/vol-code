@@ -15,38 +15,33 @@
 		<!--[if IE]>
     		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	</head>
 <body <?php body_class(); ?>>
 <div class="container">
 <header>
 <div id="brand" class="clearfix">
-	<div class="alignleft">
+	<div class="pull-left">
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 	</div>
-	
 </div>
-
-	<div class="navbar">
+<div class="navbar">
   <div class="navbar-inner">
-
-	<nav role="navigation">
-<?php 
-    wp_nav_menu( array(
-        'menu'       => 'header-menu',
-        'depth'      => 2,
-        'container'  => false,
-        'menu_class' => 'nav',
-        'fallback_cb' => 'wp_page_menu',
-        //Process nav menu using our custom nav walker
-        'walker' => new wp_bootstrap_navwalker())
-    );
-?>
-</nav><!-- /nav -->
-
-  </div>
-	</div>
-	
-	<div id="banner">
-	</div>
-	
+		<nav role="navigation">
+			<?php 
+			    wp_nav_menu( array(
+			        'menu'       => 'header-menu',
+			        'depth'      => 2,
+			        'container'  => false,
+			        'menu_class' => 'nav',
+			        'fallback_cb' => 'wp_page_menu',
+			        //Process nav menu using our custom nav walker
+			        'walker' => new wp_bootstrap_navwalker())
+			    );
+			?>
+		</nav><!-- /nav -->
+ 	</div>
+</div>
+<div id="banner">
+</div>
 </header>

@@ -4,7 +4,7 @@ Description:    Website theme for Voluntary Code of Practice for Social Enterpri
 Author:         Engage
 Author URI:     http://engage-online.com
 Template:       engage
-Version:        1.0
+Version:        1.0.01
 */
 
 @import url("../engage/style.css");
@@ -112,6 +112,12 @@ h3, .widget-inner h3 label {
     color: ;
     
   
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: #edeeef;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.0) inset;
+    color: #333;
 }
 
 .dropdown-menu > li > a {

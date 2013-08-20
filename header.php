@@ -42,6 +42,6 @@
 		</div>
 		<div id="banner">
 			<p class="banner-quote">“The values and behaviours by which we recognise each other”</p>
-			<p class="banner-text">Voluntary code of practice for Social Enterprise in Scotland</p>
+			<p class="banner-text">Voluntary code of practice for<br>Social Enterprise in Scotland</p>
 		</div>
 	</header>

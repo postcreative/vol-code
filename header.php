@@ -11,10 +11,11 @@
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
+		<link rel="shortcut icon" href="favicon.ico"/>
 		<?php wp_head(); ?>
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	</head>
 <body <?php body_class(); ?>>
 <div class="container">
@@ -40,5 +41,7 @@
 		 	</div>
 		</div>
 		<div id="banner">
+			<p class="banner-quote">“The values and behaviours by which we recognise each other”</p>
+			<p class="banner-text">Voluntary code of practice for Social Enterprise in Scotland</p>
 		</div>
 	</header>

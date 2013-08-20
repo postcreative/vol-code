@@ -101,13 +101,36 @@ h4 {
 
 .navbar .nav li a {
 	background-color: #edeeef;
-	background-image: url('./images/sep.png');
+	background-image: url('./images/menu-sep.png');
 	background-position: top right;
 	background-repeat: no-repeat;
     padding: 10px 44px 10px 15px;
     color: ;
     text-decoration: ;
 }
+
+	.current-menu-item a {
+		background-image: url('./images/active.png') !important;
+		color: #fff;
+		position:relative;
+	}
+
+		.current-menu-item a:before {
+			content: " ";
+			background-image: url('./images/active-left.png');
+			background-repeat: no-repeat;
+			position: absolute;
+			left: -35px;
+			height: 57px;
+			top: 0;
+			width: 35px;
+		}
+
+		.nav li:first-child a:before {
+			content: " ";
+			height: 0;
+			width: 0;
+		}
 
 	.navbar .nav li:last-child a {
 		background-image: none;
@@ -121,7 +144,7 @@ h4 {
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     background-color: #edeeef;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.0) inset;
-    color: #333;
+    color: #fff;
 }
 
 .dropdown-menu > li > a {
@@ -151,6 +174,7 @@ h4 {
 		margin: 0;
 		padding: 0;
 		line-height: 1;
+		letter-spacing: -0.6;
 	}
 
 	.banner-quote {
